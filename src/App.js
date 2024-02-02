@@ -11,51 +11,9 @@ function App() {
   let [b7, setb7] = useState('7')
   let [b8, setb8] = useState('')
   let [b9, setb9] = useState('8')
-  // let [b1, setb1] = useState('')
-  // let [b2, setb2] = useState('')
-  // let [b3, setb3] = useState('')
-  // let [b4, setb4] = useState('')
-  // let [b5, setb5] = useState('')
-  // let [b6, setb6] = useState('')
-  // let [b7, setb7] = useState('')
-  // let [b8, setb8] = useState('')
-  // let [b9, setb9] = useState('')
   let [disp, setdisp] = useState('')
 
   let t1, t2, t3, t4, t5, t6, t7, t8, t9
-  // let t = ['', '', '', '', '', '', '', '', '']
-  // const rand = (q) => {
-  //   for (let i = 0; i < 9; i++) {
-  //     let randome = Math.floor(Math.random() * 9) + 1
-  //     if (t.indexOf(randome) >= 0) {
-  //       i--
-  //     }
-  //     else {
-  //       if (t[i] === '') {
-  //         t[i] = randome
-  //       }
-  //     }
-  //   }
-  //   t1=t[0]
-  //   t2=t[1]
-  //   t3=t[2]
-  //   t4=t[3]
-  //   t5=t[4]
-  //   t6=t[5]
-  //   t7=t[6]
-  //   t8=t[7]
-  //   t9=t[8]
-  // }
-  // rand(12)
-  // // setb1(t[0])
-  // // setb2(t[1])
-  // // setb3(t[1])
-  // // setb4(t[3])
-  // // setb5(t[4])
-  // // setb6(t[5])
-  // // setb7(t[6])
-  // // setb8(t[7])
-  // // setb9(t[8])
   const change = (id) => {
     t1 = b1
     t2 = b2
@@ -145,8 +103,8 @@ function App() {
         t4 = t7;
         t7 = ''
       } else if (t8 === '') {
-        t8 = t9;
-        t9 = '';
+        t8 = t7;
+        t7 = '';
       }
     }
     if (id === '8') {
